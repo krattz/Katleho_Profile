@@ -1,0 +1,230 @@
+.body{
+  margin: 0px;
+  padding: 0px;
+}
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: right;
+    display: flex;
+    color: #d3d3d3;
+    text-align: right;
+    padding: 14px;
+    text-decoration: none;
+    flex-direction:row;
+  }
+  /*change nav button color on hover*/
+  .navbar a:hover {
+    background-color: #ddd;
+  }
+  
+  /*this space will host a pic that represents me*/
+  #home{ 
+    background-image: url('../pics/silk_by_crazyivan969_d1ffxjf-pre.jpg');  
+    width: 100%;
+    height: 500px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .pic{
+    position: absolute;
+    top: 110px;
+    left: 118px;
+    border-radius: 50%;
+    width: 220px;
+    height:220px;
+    background: url("../pics/69.jpg");
+    background-size: cover;
+  }
+  .name {
+    position: absolute;
+    top: 330px;
+    left: 143px;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .intro {
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.7;
+    border-radius: 2%;
+  }
+  /*This four blocks must carry text about my skills*/
+#skills{
+    display: grid;
+    grid-template-rows: 230px ;
+    grid-template-columns: repeat(2,24% 24%);
+    grid-column-gap: 12px;
+    grid-row-gap: 10px;
+    padding: 50px 0px 10px 0px;
+}
+/*The four blocks labelled below for single block adjustments*/
+.d1{
+    background: aquamarine;
+    border-radius: 8%;
+    text-align: center;
+    padding-left: 15px;
+}
+#words{text-align: left;}
+.d2{
+    background: aquamarine;
+    border-radius: 8%;
+    text-align: center;
+
+}
+.d3{
+    background: aquamarine;
+    border-radius: 8%;
+    text-align: center;
+   
+}
+.d4{
+    background: aquamarine;
+    border-radius: 8%;
+    text-align: center;
+   
+}
+
+
+  /*nothing to display- will decide on what to place here later*/
+  #projects{
+    height: 210px;
+    width:100%;
+  background: rgba(125, 204, 204, 0.747);
+  margin-top: 10px;
+  }
+  .projects-title{
+    text-align: center;
+    padding-top: 50px;
+  }
+  .projects-content{
+    text-align: center;
+    padding-top: 50px;
+  }
+  /*footer with social media icons. remeber to link them later*/
+  #footer{
+      height: 210px;
+      width:100%;
+    background-color: #333;
+    margin-top: 10px;
+  }
+  .footer-title{
+    position: relative;
+    
+    text-align: center;
+  }
+  /*Social media Icons position in the footer*/
+  .icons{
+    position:relative;
+    bottom: -97px;
+    left: 320px;
+  }
+  /*Social media Icons must be changed to individual pics*/
+  .fa {  
+    padding: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    border-radius: 60%;
+  }
+  
+  
+  .fa-twitter {
+    border-radius: 60%;
+  }
+  
+  .fa-google {
+    border-radius: 60%;
+  }
+
+  .fa-linkedin {
+    border-radius: 60%;
+  }
+  
+  .fa-skype {
+    border-radius: 60%;
+  }
+  @media screen and (max-width:650px){
+    
+    #home{
+       background: url("../pics/69.jpg");
+       background-size: cover;
+    }
+    .pic{
+       display: none;
+    }
+    .intro{
+      position: inherit;
+      display: none;
+    }
+    .name{
+      position: relative;
+      left: 0px;
+      padding: 3px 2px 3px 2px;
+      text-align: right;
+    }
+    #skills{
+      display: block;
+      width: 100%;
+    }
+    .d1{
+      width: 100%;
+      height: auto;
+      border-radius: 0%;
+    }
+    .d2{
+      width: 100%;
+      height: auto;
+      border-radius: 0%;
+    }
+    .d3{
+      width: 100%;
+      height: auto;
+      padding: 4px 0px;
+      border-radius: 0%;
+    }
+    .d4{
+      width: 100%;
+      height: auto;
+      border-radius: 0%;
+    }
+    .icons{
+      position: relative;
+      bottom: -97px;
+      left: 230px;
+    }
+    .fa {  
+      padding: 0px;
+      font-size: 30px;
+      width: 18px;
+      text-align: center;
+      text-decoration: none;
+      margin: 1px 1px;
+    }
+    
+
+  }
+
+
