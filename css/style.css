@@ -82,12 +82,13 @@
    height: 410px;
    background-color: (0,0,0, 0.4);
  }
- .li{
-  list-style-type: none;
-}
+ #words{
+   text-align: left;
+   text-decoration: none;
+  }
   /*This four blocks must carry text about my skills*/
   
-#skills{
+.skills{
     display: grid;
     grid-template-rows: 230px ;
     grid-template-columns: repeat(2,24% 24%);
@@ -102,9 +103,10 @@
     text-align: center;
     padding-left: 15px;
     font-family: sans-serif;
+    margin-top: 12px;
     
 }
-#words{text-align: left;}
+
 .d2{
     background: #98B2C5;
     border-radius: 8%;
@@ -142,89 +144,7 @@
     padding-top: 50px;
     font-family: sans-serif;
   }
-  /*footer with social media icons. remeber to link them later*/
-  #footer{
-   
-      height: 420px;
-      width:100%;
-    background-color: #333;
-    margin-top: 10px;
-    font-family: sans-serif;
-  }
-  .footer-title{
-    position: relative;
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-  }
-
-  /*Contact Form*/
-  .name{
-    margin-bottom: 10px;
-   
-}
-
-.email{
-    margin-bottom: 10px;
-}
-
-.form-container{
-  position: relative;
-  bottom: -2px;
-  left: 650px;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-    
-}
-
-#area{
-    height: 80px;
-    width: 100%;
-}
-
-  /*Social media Icons position in the footer*/
-  .icons{
-    position:relative;
-    bottom: -200px;
-    left: 320px;
-  }
-  /*Social media Icons must be changed to individual pics*/
-  .fa {  
-    padding: 0px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    border-radius: 60%;
-  }
-  
-  
-  .fa-twitter {
-    border-radius: 60%;
-  }
-  
-  .fa-google {
-    border-radius: 60%;
-  }
-
-  .fa-linkedin {
-    border-radius: 60%;
-  }
-  
-  .fa-skype {
-    border-radius: 60%;
-  }
-
+/*Loading spinner */
   .lds-spinner {
     color: official;
     display: inline-block;
@@ -308,7 +228,89 @@
   
 
 
-  @media screen and (max-width:650px){
+  /*footer with social media icons. remeber to link them later*/
+  #footer{
+   
+      height: 420px;
+      width:100%;
+    background-color: #333;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+  .footer-title{
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  /*Contact Form*/
+  .name{
+    margin-bottom: 10px;
+}
+.email{
+    margin-bottom: 10px;
+}
+
+.form-container{
+  position: relative;
+  bottom: -2px;
+  left: 650px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+    
+}
+
+#area{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+  /*Social media Icons position in the footer*/
+  .icons{
+    position:relative;
+    bottom: -200px;
+    left: 320px;
+  }
+  /*Social media Icons must be changed to individual pics*/
+  .fa {  
+    padding: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    border-radius: 60%;
+  }
+  
+  
+  .fa-twitter {
+    border-radius: 60%;
+  }
+  
+  .fa-google {
+    border-radius: 60%;
+  }
+
+  .fa-linkedin {
+    border-radius: 60%;
+  }
+  
+  .fa-skype {
+    border-radius: 60%;
+  }
+
+  @media screen and (max-width:770px){
     
     #home{
        background: url("../pics/69.jpg");
@@ -318,8 +320,14 @@
        display: none;
     }
     .intro{
-      position: inherit;
-      display: none;
+      position: absolute;
+      top: 800px;
+     left: 14px;
+      height: 40%;
+      width: 85%;
+      padding-left: 30px;
+      overflow: scroll;
+     
     }
     .name{
       position: relative;
@@ -327,31 +335,35 @@
       padding: 3px 2px 3px 2px;
       text-align: right;
     }
-    #skills{
+    .skills{
       display: block;
       width: 100%;
     }
     .d1{
-      width: 100%;
+      width: 97.4%;
       height: auto;
       border-radius: 0%;
-      
+      margin-top: 23px;
+      padding-bottom: 6px;
     }
     .d2{
       width: 100%;
       height: auto;
       border-radius: 0%;
+      
     }
     .d3{
       width: 100%;
       height: auto;
       padding: 4px 0px;
       border-radius: 0%;
+      padding-bottom: 6px;
     }
     .d4{
       width: 100%;
       height: auto;
       border-radius: 0%;
+      padding-bottom: 6px;
     }
     .icons{
       position: relative;
@@ -366,8 +378,18 @@
       text-decoration: none;
       margin: 1px 1px;
     }
-    
+   
+    .form-container{
+      position: inherit;
+    }
 
+    .icons{
+      position: relative;
+      top: 180px;
+    }
+    .lds-spinner{
+      display: none;
+    }
   }
 
 
