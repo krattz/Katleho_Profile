@@ -38,15 +38,22 @@
     margin-top: 0px;
     margin-bottom: 4px;
   }
-
+  #oca{
+    position: absolute;
+    top: 126%;
+    left: 38%;
+    width: 370px;
+    height: 200px;
+    opacity: 0.4;
+  }
   .pic{
   
     position: absolute;
-    top: 810px;
+    top: 120%;
     left: 106px;
     border-radius: 5%;
     border: solid black;
-    width: 220px;
+    width: 290px;
     height:280px;
     background: url("../pics/69.jpg");
     background-size: cover;
@@ -65,7 +72,7 @@
   .intro {
     
     position: absolute;
-    top: 808px;
+    top: 120%;
     right: 80px;
     background-color: black;
     color: white;
@@ -77,24 +84,26 @@
     border-radius: 2%;
     font-family: sans-serif;
   }
- #about{
+ .about{
+   display:inline-grid;
    width: 100%;
    height: 410px;
-   background-color: (0,0,0, 0.4);
+   background-color: linear-gradient(72deg, red, #f06d06);
  }
  #words{
    text-align: left;
    text-decoration: none;
+   list-style: none;
   }
   /*This four blocks must carry text about my skills*/
   
-.skills{
+#skills1{
     display: grid;
     grid-template-rows: 230px ;
     grid-template-columns: repeat(2,24% 24%);
     grid-column-gap: 12px;
     grid-row-gap: 10px;
-    padding: 50px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
 }
 /*The four blocks labelled below for single block adjustments*/
 .d1{
@@ -103,7 +112,7 @@
     text-align: center;
     padding-left: 15px;
     font-family: sans-serif;
-    margin-top: 12px;
+   
     
 }
 
@@ -152,7 +161,7 @@
     width: 64px;
     height: 64px;
     top: 0px;
-    left: 480px;
+    left: 48%;
   }
   .lds-spinner div {
     transform-origin: 32px 32px;
@@ -256,7 +265,7 @@
 .form-container{
   position: relative;
   bottom: -2px;
-  left: 650px;
+  left: 44%;
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
@@ -273,7 +282,9 @@
   .icons{
     position:relative;
     bottom: -200px;
-    left: 320px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
   }
   /*Social media Icons must be changed to individual pics*/
   .fa {  
@@ -304,10 +315,27 @@
 
   .fa-linkedin {
     border-radius: 60%;
+    background-color: #057db7;
+    background-size: cover;
   }
   
   .fa-skype {
     border-radius: 60%;
+  }
+  .toTop{
+    position: absolute;
+    top: 1800px;
+    right: 30px;
+    width: auto;
+    height: auto;
+    background-color: #98B2C5;
+    padding: 12px;
+    font-style: sans-serif;
+    border-radius: 3%;
+  }
+  .toTop:hover {
+    background-color: yellow;
+    cursor: pointer;
   }
 
   @media screen and (max-width:770px){
@@ -321,11 +349,11 @@
     }
     .intro{
       position: absolute;
-      top: 800px;
+      top: 116%;
      left: 14px;
       height: 40%;
       width: 85%;
-      padding-left: 30px;
+      padding-left: 80px;
       overflow: scroll;
      
     }
@@ -335,7 +363,7 @@
       padding: 3px 2px 3px 2px;
       text-align: right;
     }
-    .skills{
+    #skills1{
       display: block;
       width: 100%;
     }
@@ -379,13 +407,15 @@
       margin: 1px 1px;
     }
    
-    .form-container{
-      position: inherit;
+      .form-container{
+      position: relative;
+      Left: 40%;
     }
 
     .icons{
       position: relative;
-      top: 180px;
+      top: 190px;
+      left: 46%;
     }
     .lds-spinner{
       display: none;
