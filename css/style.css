@@ -1,6 +1,7 @@
 .body{
   margin: 0px;
   padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .p{
   font-family: sans-serif;
@@ -233,8 +234,6 @@
     }
   }
   
-
-
   /*footer with social media icons. remeber to link them later*/
   #footer{
    
@@ -260,14 +259,15 @@
     margin-bottom: 10px;
 }
 
-.form-container{
-  position: relative;
-  bottom: -2px;
-  left: 44%;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-    
+.form-container {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  border: none;
 }
 
 #area{
@@ -277,12 +277,14 @@
 }
 
   /*Social media Icons position in the footer*/
-  .icons{
-    position:relative;
-    bottom: -200px;
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
+  .icons {
+    text-align: center; 
+  }
+  .icons a {
+    color: #fff;
+  }
+  .icons a:hover{
+    color:goldenrod;
   }
   /*Social media Icons must be changed to individual pics*/
   .fa {  
@@ -291,7 +293,7 @@
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 8px 5px;
   }
   
   .fa:hover {
@@ -313,8 +315,6 @@
 
   .fa-linkedin {
     border-radius: 60%;
-    background-color: #057db7;
-    background-size: cover;
   }
   
   .fa-skype {
@@ -328,12 +328,13 @@
     height: auto;
     background-color: #98B2C5;
     padding: 12px;
-    font-style: sans-serif;
+    font-family: sans-serif;
     border-radius: 3%;
   }
   .toTop:hover {
-    background-color: yellow;
+    background-color: rgba(60, 226, 87, 0.541);
     cursor: pointer;
+    transform: scale(2);
   }
 
   @media screen and (max-width:770px){
@@ -391,30 +392,7 @@
       border-radius: 0%;
       padding-bottom: 6px;
     }
-    .icons{
-      position: relative;
-      bottom: -97px;
-      left: 230px;
-    }
-    .fa {  
-      padding: 0px;
-      font-size: 30px;
-      width: 18px;
-      text-align: center;
-      text-decoration: none;
-      margin: 1px 1px;
-    }
    
-      .form-container{
-      position: relative;
-      Left: 40%;
-    }
-
-    .icons{
-      position: relative;
-      top: 190px;
-      left: 46%;
-    }
     .lds-spinner{
       display: none;
     }
