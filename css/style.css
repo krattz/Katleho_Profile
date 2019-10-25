@@ -103,7 +103,7 @@
     grid-template-columns: repeat(2,24% 24%);
     grid-column-gap: 12px;
     grid-row-gap: 10px;
-    padding: 30px 0px 10px 0px;
+    padding: 50px 0px 10px 0px;
 }
 /*The four blocks labelled below for single block adjustments*/
 .d1{
@@ -111,9 +111,7 @@
     border-radius: 8%;
     text-align: center;
     padding-left: 15px;
-    font-family: sans-serif;
-   
-    
+    font-family: sans-serif;   
 }
 
 .d2{
