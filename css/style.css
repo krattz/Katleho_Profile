@@ -50,8 +50,9 @@
   .pic{
   
     position: absolute;
-    top: 120%;
-    left: 106px;
+    top: auto;
+    left: 8%;
+    margin-top: 6%;
     border-radius: 5%;
     border: solid black;
     width: 290px;
@@ -73,8 +74,9 @@
   .intro {
     
     position: absolute;
-    top: 120%;
+    top: auto;
     right: 80px;
+    margin-top: 6%;
     background-color: black;
     color: white;
     padding-left: 20px;
@@ -95,6 +97,7 @@
    text-align: left;
    text-decoration: none;
    list-style: none;
+   margin: 0 auto;
   }
   /*This four blocks must carry text about my skills*/
   
@@ -112,7 +115,8 @@
     border-radius: 8%;
     text-align: center;
     padding-left: 15px;
-    font-family: sans-serif;   
+    font-family: sans-serif;
+    height: 200px; 
 }
 
 .d2{
@@ -120,18 +124,22 @@
     border-radius: 8%;
     text-align: center;
     font-family: sans-serif;
+    height: 200px;
+    margin-bottom: 18px;
 }
 .d3{
     background: #98B2C5;
     border-radius: 8%;
     text-align: center;
     font-family: sans-serif;
+    height: 200px;
 }
 .d4{
     background: #98B2C5;
     border-radius: 8%;
     text-align: center;
     font-family: sans-serif;
+    height: 200px;
 }
 
 
@@ -350,13 +358,11 @@
     }
     .intro{
       position: absolute;
-      top: 116%;
-     left: 14px;
+     margin: auto auto;
       height: 40%;
-      width: 85%;
-      padding-left: 80px;
+      width: 80%;
+      
       overflow: scroll;
-     
     }
     .name{
       position: relative;
