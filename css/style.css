@@ -35,7 +35,7 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     margin-top: 0px;
     margin-bottom: 4px;
   }
@@ -48,7 +48,7 @@
     opacity: 0.4;
   }
   .pic{
-    display: visible;
+    display: inline-grid;
     position: absolute;
     top: auto;
     left: 8%;
@@ -59,6 +59,7 @@
     height:280px;
     background: url("../pics/69.jpg");
     background-size: cover;
+    z-index: -1;
   }
   .myname {
     position: fixed;
@@ -72,7 +73,6 @@
     font-family: sans-serif;
   }
   .intro {
-    
     position: absolute;
     top: auto;
     right: 80px;
@@ -89,9 +89,10 @@
   }
  .about{
    display:inline-grid;
-   width: 100%;
+   width: 80%;
    height: 410px;
    background-color: linear-gradient(72deg, red, #f06d06);
+   z-index: 1;
  }
  #words{
    text-align: left;
@@ -102,47 +103,27 @@
   /*This four blocks must carry text about my skills*/
   
 #skills1{
-    display: grid;
+    display: inline-grid;
     grid-template-rows: auto auto auto auto ;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 12px;
+    grid-column-gap: 4px;
     grid-row-gap: 10px;
     padding: 50px 0px 10px 0px;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
 }
 /*The four blocks labelled below for single block adjustments*/
 .d1{
     background: #98B2C5;
     border-radius: 8%;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 1px;
     font-family: sans-serif;
     height: 200px; 
+    width: 100%;
 }
-
-
-/* .d2{
-    background: #98B2C5;
-    border-radius: 8%;
-    text-align: center;
-    font-family: sans-serif;
-    height: 200px;
-    margin-bottom: 18px;
-}
-.d3{
-    background: #98B2C5;
-    border-radius: 8%;
-    text-align: center;
-    font-family: sans-serif;
-    height: 200px;
-}
-.d4{
-    background: #98B2C5;
-    border-radius: 8%;
-    text-align: center;
-    font-family: sans-serif;
-    height: 200px;
-} */
-
 
   /*nothing to display- will decide on what to place here later*/
   #projects{
@@ -173,7 +154,7 @@
   }
   .lds-spinner div {
     transform-origin: 32px 32px;
-    animation: lds-spinner 1.2s linear infinite;
+    animation: lds-spinner 4.2s ;
   }
   .lds-spinner div:after {
     content: " ";
@@ -372,11 +353,13 @@
       text-align: right;
     }
     #skills1{
-      display: grid;
+      display: block;
       align-content: space-around;
       align-content: space-between;
       width: 100%;
       grid: 100px / auto auto;
+      grid-template-columns: auto;
+
     }
     .d1{
       width: 97.4%;
@@ -385,29 +368,17 @@
       margin-top: 23px;
       padding-bottom: 6px;
     }
-    /* .d2{
-      width: 100%;
-      height: auto;
-      border-radius: 0%;
-      
-    }
-    .d3{
-      width: 100%;
-      height: auto;
-      padding: 4px 0px;
-      border-radius: 0%;
-      padding-bottom: 6px;
-    }
-    .d4{
-      width: 100%;
-      height: auto;
-      border-radius: 0%;
-      padding-bottom: 6px;
-    } */
    
     .lds-spinner{
       display: none;
     }
+    .footer{
+      background-color: #333;
+    }
   }
-
-
+  @media screen and (max-width:320px){
+    .pic{
+      display: none;
+    }
+    
+  }
