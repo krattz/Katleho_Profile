@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (min-width:800px){
 .body{
   margin: 0px;
   padding: 0px;
@@ -15,7 +19,7 @@
   /* Navbar links */
   .navbar a {
     float: right;
-    display: flex;
+    display: grid;
     color: #d3d3d3;
     text-align: right;
     padding: 14px;
@@ -45,18 +49,19 @@
     left: 38%;
     width: 370px;
     height: 200px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
+    z-index: 1;
   }
   .pic{
     display: inline-grid;
     position: absolute;
     top: auto;
-    left: 8%;
-    margin-top: 6%;
+    left: 12%;
+    margin-top: 4%;
     border-radius: 5%;
     border: solid black;
     width: 290px;
-    height:280px;
+    height:320px;
     background: url("../pics/69.jpg");
     background-size: cover;
     z-index: -1;
@@ -75,10 +80,11 @@
   .intro {
     position: absolute;
     top: auto;
-    right: 80px;
-    margin-top: 6%;
+    right: 200px;
+    margin-top: 3.6%;
     background-color: black;
     color: white;
+    height: 320px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 8px;
@@ -86,6 +92,7 @@
     opacity: 0.7;
     border-radius: 2%;
     font-family: sans-serif;
+    opacity: 0.7;
   }
  .about{
    display:inline-grid;
@@ -117,7 +124,7 @@
 /*The four blocks labelled below for single block adjustments*/
 .d1{
     background: #98B2C5;
-    border-radius: 8%;
+    border-radius: 0%;
     text-align: center;
     padding-left: 1px;
     font-family: sans-serif;
@@ -328,57 +335,199 @@
     cursor: pointer;
     transform: scale(1.5);
   }
-
+}
   @media screen and (max-width:770px){
-    
-    #home{  
-       background: url("../pics/69.jpg");
-       background-size: cover;
+    .navbar{
+      /* text-align: right; */
+      float: right;
+      margin-bottom: 20px;
+      background-color: black;
+      /* opacity: 0.4; */
+      overflow: hidden;
+   
+    }
+    .navbar a {
+      float: right;
+      display: grid;
+      background-color: black;
+      text-align: right;
+      padding: 4px;
+      text-decoration: none ;
+      font-family: sans-serif;
+      flex-direction:row;
+      text-align: justify;
+      align-items: flex-start;
+    }
+    #home{
+      height: 60vh;
+      width: auto;
+      display: visible;
+      overflow: none;
     }
     .pic{
-       display: none;
+     display: none;
+    }
+    #about{
+      height: 320px;
+      width: auto;
+      background-color: #333;
+      margin-top: 24px;
+      overflow-y: auto;
+      margin-bottom: 24px;
     }
     .intro{
-      position: absolute;
-     margin: auto auto;
-      height: 40%;
-      width: 80%;
-      
-      overflow: scroll;
-    }
-    .name{
-      position: relative;
-      left: 0px;
-      padding: 3px 2px 3px 2px;
-      text-align: right;
-    }
-    #skills1{
-      display: block;
-      align-content: space-around;
-      align-content: space-between;
-      width: 100%;
-      grid: 100px / auto auto;
-      grid-template-columns: auto;
-
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin-top: 50px;
+      padding-left: 8px;
     }
     .d1{
-      width: 97.4%;
-      height: auto;
+      background: #98B2C5;
       border-radius: 0%;
-      margin-top: 23px;
-      padding-bottom: 6px;
+      text-align: center;
+      padding-left: 1px;
+      padding-bottom: 50px;
+      font-family: sans-serif;
+      height: 200px; 
+      width: 100%;
+      grid-row-gap: 10px;
+  }
+    #d1{
+      background: #98B2C5;
+      border-radius: 0%;
+      text-align: center;
+      padding-left: 1px;
+      font-family: sans-serif;
+      height: 200px; 
+      width: 100%;
+      margin-top: auto;
     }
+    #skills1{
+      grid-column-gap: 4px;
+      grid-row-gap: 10px;
+      padding: 50px 0px 10px 0px;
+      max-width: 100%;
+      width: auto;
+      overflow: hidden;
+      align-content: center;
+    }
+    #footer{
+    width:100%;
+    background-color: #333;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+  .name{
+    margin-right: 90px;
+    margin-bottom: 10px;
    
-    .lds-spinner{
-      display: none;
-    }
-    .footer{
-      background-color: #333;
-    }
+ }
+.email{
+    margin-bottom: 10px;
+    margin-right: 10px;
+ }
+ #area{
+   height: 60px;
+   overflow-y: auto;  
+ }
+ .icons{
+   margin-left: 110px;
+ }
   }
   @media screen and (max-width:320px){
-    .pic{
-      display: none;
+    .navbar{
+      /* text-align: right; */
+      float: right;
+      margin-bottom: 20px;
+      background-color: whitesmoke;
+      overflow: hidden;
+   
     }
-    
+    .navbar a {
+      float: right;
+      display: grid;
+      /* color: #d3d3d3; */
+      text-align: right;
+      padding: 4px;
+      text-decoration: none;
+      font-family: sans-serif;
+      flex-direction:row;
+      text-align: justify;
+      align-items: flex-start;
+    }
+    #home{
+      height: 60vh;
+      width: 320px;
+      display: visible;
+      overflow: none;
+    }
+    .pic{
+     display: none;
+    }
+    #about{
+      height: 320px;
+      width: auto;
+      background-color: #333;
+      margin-top: 24px;
+      overflow-y: auto;
+      margin-bottom: 24px;
+    }
+    .intro{
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin-top: 50px;
+      padding-left: 8px;
+    }
+    .d1{
+      background: #98B2C5;
+      border-radius: 0%;
+      text-align: center;
+      padding-left: 1px;
+      padding-bottom: 50px;
+      font-family: sans-serif;
+      height: 200px; 
+      width: 100%;
+      grid-row-gap: 10px;
   }
+    #d1{
+      background: #98B2C5;
+      border-radius: 0%;
+      text-align: center;
+      padding-left: 1px;
+      font-family: sans-serif;
+      height: 200px; 
+      width: 100%;
+      margin-top: auto;
+    }
+    #skills1{
+      grid-column-gap: 4px;
+      grid-row-gap: 10px;
+      padding: 50px 0px 10px 0px;
+      max-width: 100%;
+      width: 100%;
+      overflow: hidden;
+      align-content: center;
+    }
+    #footer{
+    width:100%;
+    background-color: #333;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+  .name{
+    margin-right: 90px;
+    margin-bottom: 10px;
+   
+ }
+.email{
+    margin-bottom: 10px;
+    margin-right: 60px;
+ }
+ #area{
+   height: 60px;
+   overflow-y: auto;  
+ }
+ .icons{
+   margin-left: 110px;
+ }
+}
