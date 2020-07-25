@@ -6,6 +6,7 @@
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  display: inline;
 }
 .p{
   font-family: sans-serif;
@@ -337,7 +338,10 @@
   }
 }
   @media screen and (max-width:768px){
-    .body{max-width: 768px;}
+    .body{
+      display: flex;
+      padding-left: 3px;
+    }
     .navbar{
       /* text-align: right; */
       float: right;
@@ -372,7 +376,7 @@
       overflow-y: scroll;
       overflow-x: hidden;
       margin-top: 50px;
-      padding-left: 8px;
+      text-align: center;
     }
     .d1{
       background: #98B2C5;
@@ -430,7 +434,7 @@
   list-style: none;
 }
   }
-  /*  */
+  
   @media screen and (max-width:320px){
     .body{
       max-width: 320px;
@@ -534,4 +538,19 @@ overflow-x: hidden;
 li{
   list-style: none;
 }
+.fieldset{
+  display: contents;
+}
+}
+@media screen and (max-width:375px){
+  .body{
+    display: flex;
+    max-width: auto;
+  }
+}
+@media screen and (max-width:425px){
+  .body{
+    display: flex;
+    max-width: auto;
+  }
 }
