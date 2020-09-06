@@ -194,9 +194,9 @@
   position: absolute;
   align-content: center;
   text-align: center;
-  z-index: 1;
-  right: 600px;
-  top: 200px;
+  /* z-index: 1; */
+  right: 450px;
+  top: 150px;
  color: white;
  font-family: sans-serif;
  font-size: 0.9rem;
